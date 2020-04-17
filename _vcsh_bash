@@ -140,3 +140,8 @@ _vcsh () {
 complete -F _vcsh vcsh
 
 # vim: ft=sh:
+# Local Variables:
+# mode:shell-script
+# sh-shell:bash
+# indent-tabs-mode: t
+# End:
