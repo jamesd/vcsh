@@ -132,7 +132,8 @@ _vcsh () {
 
 	# git command on repository
 	if [[ -n "${repos[$cmd]}" ]]; then
-		_vcsh_git_command $subcword
+		local REPO_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/vcsh/repo.d/${cmd}.git"
+		GIT_DIR=${REPO_DIR} _vcsh_git_command $subcword
 	fi
 	return 0
 }
